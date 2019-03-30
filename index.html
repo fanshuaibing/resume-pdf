@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>范帅兵-安徽建筑大学-应聘web前端工程师</title>
+
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_908787_kekc8lrkg7e.css">
+	<style>
+		/*css reset*/
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+		/*common css  */
+		.pill {
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			font-size: 14px;
+			width: 140px;
+			line-height: 20px;
+			text-align: center;
+			border-radius: 20px;;
+		}
+		.layout {
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+		.clearfix::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		/* page css*/
+		body {
+			font: 16px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+			color: #333;
+		}
+
+		.wrapper {
+			background-color: #ececec;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding-top: 40px;
+		}
+		.aside {
+			float: left;
+			width: 280px;
+		}
+		.aside .user {
+			text-align: center;
+			padding-bottom: 20px;
+		}
+		.aside .user h1{
+			font-size: 40px;
+		}
+		.aside .user h1::after {
+			content: '';
+			display: block;
+			width: 60px;
+			border-top: 1px solid #d6d6d6;
+			margin: 16px auto;
+		}
+		.aside .user::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			margin-top: 20px;
+			border-top: 20px solid #d6d6d6;
+			border-bottom: 20px solid transparent;
+			border-right: 140px solid #d6d6d6;
+			border-left: 140px solid transparent;
+		}
+		.aside .contact {
+			padding: 20px;
+		}
+		.aside .contact li {
+			border-bottom: 1px solid #d6d6d6;
+			list-style: none;
+			line-height: 40px;
+		}
+		.aside .contact .iconfont {
+			border-right: 1px solid #d6d6d6;
+			padding-right: 10px;
+			margin-right: 10px;
+			padding-left: 10px;
+			display: inline-block;
+			font-size: 20px;
+			color: #7bbaaa;
+		}
+		.aside .skills {
+			background: #7bbaaa;
+			padding: 20px;
+			color: #fff;
+		}
+		.aside .skills dt {
+			color: #eee;
+			margin-top: 20px;
+		}
+		.aside .skills dd {
+			height: 4px;
+			background: #74c5b5;
+			border-radius: 2px;
+			margin-top: 10px;
+		}
+		.aside .skills .mastery {
+			height: 4px;
+			background: #fff;
+			display: block;
+			border-radius: 2px;
+		}
+		.aside .others h2 {
+			margin: 20px 0 0 20px;
+		}
+		.main {
+			margin-left: 280px;
+			background: #fff;
+			padding: 40px;
+			margin-right: 20px;
+		}
+		.main .intro {
+			overflow: auto;
+		}
+		.main .intro img {
+			width: 80px;
+			height: 80px;
+			float: left;
+		}
+		.main .intro p {
+			margin-left: 120px;
+		}
+		.section {
+		}
+
+		.section .pill {
+			float: left;
+			margin-top: 5px;
+		}
+		.section h2{
+			font-size: 40px;
+			color: #333;
+			text-align: center;
+			margin-top: 30px;
+		}
+		.section .more {
+			margin-left: 150px;
+			border-left: 1px solid #eee;
+		}
+		.section h3 {
+			color: #333;
+			font-size: 20px;
+			font-family: bolder;
+		}
+		.section h3 strong{
+			color: #333;
+			font-weight: bold;
+		}
+		.section h3::before {
+			content: '';
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			border-radius: 6px;
+			border: 2px solid #7bbaaa;
+			margin-right: 20px;
+			position: relative;
+			left: -5px;
+		}
+		.section h4 {
+			color: #111;
+			margin-top: 20px;
+			margin-left: 40px;
+		}
+		.section .more ul {
+			margin-left: 50px;
+			padding-bottom: 20px;
+		}
+		.section .more li {
+			font-size: 16px;
+		}
+		.section .more li  strong{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.color{
+			color: tomato;
+
+		}
+		li> ul {
+			list-style-type: disc;
+		}
+		@media print {
+			.aside {
+				width: 200px;
+			}
+			.main {
+				margin-left: 200px;
+			}
+			.aside .user::after {
+				border-right-width: 100px;
+				border-left-width: 100px;
+			}
+			.pill {
+				display: none;
+			}
+			.section .more {
+				margin-left: 20px;
+			}
+			.wrapper {
+				margin: 0;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="wrapper layout clearfix">
+	<div class="aside">
+		<div class="user">
+			<h1>范帅兵</h1>
+			<p>应聘前端工程师</p>
+		</div>
+		<ul class="contact">
+			<li><span class="iconfont icon-email"></span> fatfan1020@gmail.com</li>
+			<li><span class="iconfont icon-phone"></span> 1775697xxxx</li>
+			<li><span class="iconfont icon-experience"></span>大四在读</li>
+			<li><span class="iconfont icon-education"></span> 安徽建筑大学(一本)</li>
+		</ul>
+		<div class="skills">
+			<h2>我的技能</h2>
+			<dl>
+				<dt>HTML5/CSS3</dt>
+				<dd><span class="mastery" style="width: 80%"></span></dd>
+				<dt>JavaScript</dt>
+				<dd><span class="mastery" style="width: 75%"></span></dd>
+				<dt>Vue/Vuex/Vue-router</dt>
+				<dd><span class="mastery" style="width: 70%"></span></dd>
+				<dt>ES6</dt>
+				<dd><span class="mastery" style="width: 70%"></span></dd>
+				<dt>微信小程序</dt>
+				<dd><span class="mastery" style="width: 70%"></span></dd>
+			</dl>
+		</div>
+		<div class="others">
+			<h2>其他</h2>
+			<ul class="contact">
+				<li><span class="iconfont icon-github"></span> <a href="https://github.com/fatfanfan">Github</a></li>
+				<li><span class="iconfont icon-blog"></span> <a href="https://www.jianshu.com/u/21ccc68041d0">博客</a></li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+
+		<div class="education section">
+			<h2>教育经历</h2>
+			<div class="item">
+				<div class="left pill">09/2015 - 07/2019</div>
+				<h3><strong>安徽建筑大学</strong>（一本）</h3>
+				<h3><strong>专业：</strong>会计学</h3>
+				<h3><strong>获奖：</strong>三次校三等奖学金</h3>
+				<h3><strong>英语：</strong>CET4</h3>
+
+			</div>
+			<div class="experience section">
+				<h2>个人技能</h2>
+				<div class="left pill">06/2018 - 现在 </div>
+				<div class="more">
+					<h3><strong>   HTML5/CSS3</strong></h3>
+					<ul class="skill">
+						<li> <strong>标签语义化：</strong> 能根据 HTML5 标准编写具有语义化的文档结构</li>
+						<li> <strong>CSS居中与布局：</strong> 能快速对元素进行居中处理，使用 <strong class="color">float、flex、position</strong> 进行居中</li>
+						<li><strong>CSS动画：</strong>能使用<strong class="color"> keyframes、transition、transform </strong>等实现常见动画效果</li>
+						<li><strong>响应式布局：</strong>能够利用 <strong class="color">媒体查询、em、rem、vh\vw </strong>进行响应式</li>
+					</ul>
+
+					<h3><strong>JavaScript</strong></h3>
+					<ul class="skill">
+						<li> <strong>熟悉 JavaScript，理解 <strong class="color">异步、this、闭包、原型链、Ajax、面向对象 </strong>等</strong> </li>
+							<li><strong>了解 <strong class="color">ES6</strong> 的部分常用语法,能在项目中普遍使用 <strong class="color">let、const、块级作用域、箭头函数、Promise 、async\await</strong> 等
+								法。</strong></li>
+					</ul>
+					<h3><strong>Vue</strong></h3>
+					<ul class="skill">
+						<li> 熟悉<strong class="color">Vue 全家桶</strong > ，能够使用 Vue 全家桶构建项目,熟悉 <strong class="color">vue-router、Vuex</strong> 等, 了解<strong class="color">响应式原理，组件通信</strong> 等等 </li>
+					</ul>
+
+					<h3><strong>HTTP 与浏览器</strong></h3>
+					<ul class="skill">
+						<li>了解 HTTP 基础知识，熟悉常见状态码含义，能够根据请求查看响应</li>
+						<li>理解浏览器运行机制，了解页面加载的整个过程。</li>
+					</ul>
+
+
+				</div>
+			</div>
+
+			<div class="projects section">
+				<h2>项目经历</h2>
+				<div class="item">
+					<div class="left pill">02/2019 - 03/2019</div>
+					<div class="more">
+						<h3>默默博客平台</h3>
+						<ul>
+							<li><strong>技术栈:</strong> <strong class="color">vue-cli、vue-router、Vuex、
+								Axios、element-ui、ES6</strong> </li>
+							<li><strong>功能：</strong><strong class="color">登陆注册、博客的增删改查、展示个人博客、首页博客、个人信息查看。</strong></li>
+
+							<li><strong>项目源码:<a href="https://github.com/fatfanfan/momo-blog" target="_blank"> momoBlog</a></strong></li>
+							<li><strong>预览项目:<a href="https://fatfanfan.github.io/momo-blog/dist/#/" target="_blank">点击查看</a></strong></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="left pill">09/2018 - 10/2018</div>
+					<div class="more">
+						<h3>Vue仿cnode社区</h3>
+						<ul>
+							<li><strong>技术栈:</strong> <strong class="color">vue-cli、vue-router、 Axios、ES6、CSS3 </strong> </li>
+							<li><strong>功能：</strong>实现了在线浏览帖子，查看用户信息功能</li>
+							<li><strong>项目源码:<a href="https://github.com/fatfanfan/cnode" target="_blank">conde 源码</a></strong></li>
+							<li><strong>预览项目:<a href="https://fatfanfan.github.io/cnode/dist" target="_blank">点击查看</a></strong></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left pill">08/2018 - 08/2018</div>
+					<div class="more">
+						<h3>默默在线画板</h3>
+						<ul>
+							<li><strong>技术栈：</strong> <strong class="color">原生 JavaScript 、Canvas、 CSS3</strong></li>
+							<li><strong>功能:</strong> 选择任意颜色、画笔粗细以及橡皮擦等功能。在线画板的本地保存功能。支持PC和手机端在线绘画功能。</li>
+							<li><strong>项目源码:<a href="https://github.com/fatfanfan/canvas" target="_blank">github.com/fatfanfan</a></strong></li>
+							<li><strong>预览项目:<a href="https://fatfanfan.github.io/canvas/index.html" target="_blank">点击查看</a></strong></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left pill">08/2018 - 08/2018</div>
+					<div class="more">
+						<h3>键盘导航</h3>
+						<ul>
+							<li><strong>技术栈：</strong> <strong class="color">原生 JavaScript CSS3</strong></li>
+							<li><strong>功能: </strong>该项目使用原生JS实现,敲击键盘导向目标网址,导航键可编辑， 按下键盘导向新网址.</li>
+							<li><strong>项目源码:<a href="https://github.com/fatfanfan/keyboard" target="_blank">导航</a></strong></li>
+							<li><strong>预览项目:<a href="https://fatfanfan.github.io/keyboard/index.html" target="_blank">点击查看</a></strong></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="left pill">12/2018 - 12/2018</div>
+					<div class="more">
+						<h3>vue在线简历</h3>
+						<ul>
+							<li><strong>技术栈：</strong><strong class="color">vue-cli、vue-router、CSS3、ES6</strong></li>
+							<li>功能：使用Vue.js 写的个人简历，展示个人项目与个人技能，用于熟悉vue.js</li>
+							<li><strong>项目源码:<a href="https://github.com/fatfanfan/vue-resume" target="_blank">简历</a></strong></li>
+							<li><strong>预览项目:<a href="https://fatfanfan.github.io/vue-resume/dist/#/" target="_blank">点击查看</a></strong></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="about-me section">
+			</div>
+		</div>
+	</div>
+</body>
