@@ -18,16 +18,7 @@
 			color: #333;
 		}
 		/*common css  */
-		.pill {
-			background: #000;
-			color: #fff;
-			display: inline-block;
-			font-size: 14px;
-			width: 140px;
-			line-height: 20px;
-			text-align: center;
-			border-radius: 20px;;
-		}
+
 		.layout {
 			max-width: 1100px;
 			margin: 0 auto;
@@ -42,6 +33,20 @@
 			font: 16px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
 			color: #333;
 		}
+		.pill {
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			font-size: 14px;
+			width: 140px;
+			line-height: 20px;
+			text-align: center;
+			border-radius: 20px;;
+		}
+		.section .pill {
+			float: left;
+			margin-top: 5px;
+		}
 
 		.wrapper {
 			background-color: #ececec;
@@ -49,13 +54,32 @@
 			margin-bottom: 30px;
 			padding-top: 40px;
 		}
+	h2{
+		text-align: center;
+	}
+		.top{
+			display: flex;
+			margin-right: 40px;
+			margin-bottom: 100px;
+		}
+		.content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			padding: 30px;
+			background: white;
+		}
+		.education{
+			width: 100%;
+		}
 		.aside {
-			float: left;
 			width: 280px;
 		}
 		.aside .user {
 			text-align: center;
 			padding-bottom: 20px;
+			font-size: 22px;
 		}
 		.aside .user h1{
 			font-size: 40px;
@@ -119,30 +143,20 @@
 		.aside .others h2 {
 			margin: 20px 0 0 20px;
 		}
-		.main {
-			margin-left: 280px;
-			background: #fff;
-			padding: 40px;
-			margin-right: 20px;
-		}
-		.main .intro {
-			overflow: auto;
-		}
-		.main .intro img {
+
+
+		 .intro img {
 			width: 80px;
 			height: 80px;
 			float: left;
 		}
-		.main .intro p {
+		 .intro p {
 			margin-left: 120px;
 		}
-		.section {
-		}
 
-		.section .pill {
-			float: left;
-			margin-top: 5px;
-		}
+
+
+
 		.section h2{
 			font-size: 40px;
 			color: #333;
@@ -150,7 +164,6 @@
 			margin-top: 30px;
 		}
 		.section .more {
-			margin-left: 150px;
 			border-left: 1px solid #eee;
 		}
 		.section h3 {
@@ -196,23 +209,33 @@
 		li> ul {
 			list-style-type: disc;
 		}
+
+		main{
+			margin-top: 50px;
+			padding: 50px;
+			background: white;
+		}
+		main .projects{
+			display: flex;
+			flex-direction: column;
+			margin-left: 20px;
+			padding: 0px 40px;
+		}
+		.projects h2{
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+
+
 		@media print {
 			.aside {
 				width: 200px;
-			}
-			.main {
-				margin-left: 200px;
 			}
 			.aside .user::after {
 				border-right-width: 100px;
 				border-left-width: 100px;
 			}
-			.pill {
-				display: none;
-			}
-			.section .more {
-				margin-left: 20px;
-			}
+
 			.wrapper {
 				margin: 0;
 			}
@@ -223,69 +246,70 @@
 </head>
 <body>
 <div class="wrapper layout clearfix">
-	<div class="aside">
-		<div class="user">
-			<h1>范帅兵</h1>
-			<p>应聘前端工程师</p>
-		</div>
-		<ul class="contact">
-			<li><span class="iconfont icon-email"></span>1737574999@qq.com</li>
-			<li><span class="iconfont icon-phone"></span> 1775697xxxx</li>
-			<li><span class="iconfont icon-experience"></span>大四在读</li>
-			<li><span class="iconfont icon-education"></span> 安徽建筑大学</li>
-		</ul>
-		<div class="skills">
-			<h2>我的技能</h2>
-			<dl>
-				<dt>HTML5/CSS3</dt>
-				<dd><span class="mastery" style="width: 80%"></span></dd>
-				<dt>JavaScript</dt>
-				<dd><span class="mastery" style="width: 75%"></span></dd>
-				<dt>Vue/Vuex/Vue-router</dt>
-				<dd><span class="mastery" style="width: 70%"></span></dd>
-				<dt>ES6</dt>
-				<dd><span class="mastery" style="width: 70%"></span></dd>
-				<dt>微信小程序</dt>
-				<dd><span class="mastery" style="width: 70%"></span></dd>
-			</dl>
-		</div>
-		<div class="others">
+
+	<div class="top">
+		<div class="aside">
+			<div class="user">
+				<h1>范帅兵</h1>
+				<p>应聘前端工程师</p>
+			</div>
 			<ul class="contact">
-				<li><span class="iconfont icon-github"></span> <a href="https://github.com/fatfanfan">Github</a></li>
-				<li><span class="iconfont icon-blog"></span> <a href="https://www.jianshu.com/u/21ccc68041d0">博客</a></li>
-
+				<li style="font-size: 12px;"><span class="iconfont icon-email"></span>1737574999@qq.com</li>
+				<li><span class="iconfont icon-phone"></span> 17756979xxxx</li>
+				<li><span class="iconfont icon-education"></span> 安徽建筑大学</li>
 			</ul>
+			<div class="skills">
+				<h2>我的技能</h2>
+				<dl>
+					<dt>HTML5/CSS3</dt>
+					<dd><span class="mastery" style="width: 80%"></span></dd>
+					<dt>JavaScript</dt>
+					<dd><span class="mastery" style="width: 75%"></span></dd>
+					<dt>Vue/Vuex/VueRouter</dt>
+					<dd><span class="mastery" style="width: 70%"></span></dd>
+					<dt>ES6</dt>
+					<dd><span class="mastery" style="width: 70%"></span></dd>
+					<dt>微信小程序</dt>
+					<dd><span class="mastery" style="width: 70%"></span></dd>
+				</dl>
+			</div>
+			<div class="others">
+				<ul class="contact">
+					<li><span class="iconfont icon-github"></span> <a href="https://github.com/fatfanfan">Github</a></li>
+					<li><span class="iconfont icon-blog"></span> <a href="https://www.jianshu.com/u/21ccc68041d0">博客</a></li>
+
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="main">
-
-		<div class="education section">
-			<h2>教育经历</h2>
-			<div class="item">
-				<div class="left pill">09/2015 - 07/2019</div>
-				<h3><strong>安徽建筑大学</strong>(一本)</h3>
-				<h3><strong>专业：</strong>会计学</h3>
-				<h3><strong>获奖：</strong>三次校三等奖学金</h3>
-				<h3><strong>英语：</strong>CET4</h3>
-
+		<div class="content">
+			<p>一年前端项目经验，熟悉Vue技术栈，熟悉模块化、工程化开发流程，熟练使用ES6
+				写代码，有小程序、移动端开发经验
+			</p>
+			<div class="education section">
+				<h2>教育经历</h2>
+				<div class="item">
+					<h3><strong>学校： 安徽建筑大学</strong>(一本)</h3>
+					<h3><strong>专业：</strong>会计学</h3>
+					<h3><strong>获奖：</strong>三次校三等奖学金</h3>
+					<h3><strong>英语：</strong>CET4</h3>
+				</div>
 			</div>
 			<div class="experience section">
 				<h2>个人技能</h2>
-				<div class="left pill">06/2018 - 现在 </div>
 				<div class="more">
 					<h3><strong>   HTML5/CSS3</strong></h3>
 					<ul class="skill">
 						<li> <strong>标签语义化：</strong> 能根据 HTML5 标准编写具有语义化的文档结构</li>
 						<li> <strong>CSS居中与布局：</strong> 能快速对元素进行居中处理，使用 <strong class="color">float、flex、position</strong> 进行居中</li>
-						<li><strong>CSS动画：</strong>能使用<strong class="color"> keyframes、transition、transform </strong>等实现常见动画效果</li>
-						<li><strong>响应式布局：</strong>能够利用 <strong class="color">媒体查询、em、rem、vh\vw </strong>进行响应式</li>
+						<li><strong>CSS动画：</strong>能使用<strong > keyframes、transition、transform </strong>等实现常见动画效果</li>
+						<li><strong>响应式布局：</strong>能够利用 <strong >媒体查询、em、rem、vh\vw </strong>进行响应式布局</li>
 					</ul>
 
 					<h3><strong>JavaScript</strong></h3>
 					<ul class="skill">
-						<li> <strong>熟悉 JavaScript，理解 <strong class="color">异步、this、闭包、原型链、Ajax、面向对象 </strong>等</strong> </li>
-							<li><strong>了解 <strong class="color">ES6</strong> 的部分常用语法,能在项目中普遍使用 <strong class="color">let、const、块级作用域、箭头函数、Promise 、async\await</strong> 等
-								法。</strong></li>
+						<li> <strong>熟悉 JavaScript，理解 <strong >异步、this、闭包、原型链、Ajax、面向对象 </strong>等</strong> </li>
+						<li><strong>了解 <strong >ES6</strong> 的部分常用语法,能在项目中普遍使用 <strong class="color">let、const、块级作用域、箭头函数、Promise 、async\await</strong> 等
+							法。</strong></li>
 					</ul>
 					<h3><strong>Vue</strong></h3>
 					<ul class="skill">
@@ -297,81 +321,128 @@
 						<li>了解 HTTP 基础知识，熟悉常见状态码含义，能够根据请求查看响应</li>
 						<li>理解浏览器运行机制，了解页面加载的整个过程。</li>
 					</ul>
-
-
 				</div>
-			</div>
-
-			<div class="projects section">
-				<h2>项目经历</h2>
-				<div class="item">
-					<div class="left pill">3/2019 - 4/2018</div>
-					<div class="more">
-						<h3>拾夕 Todo 小程序</h3>
-						<ul>
-							<li><strong>技术栈：</strong><strong class="color">原生微信小程序</strong></li>
-							<li>功能：一键登录、添加清单、番茄钟、历史清单、完成的任务</li>
-							<li><strong>项目源码:<a href="https://github.com/fatfanfan/tomato-mini" target="_blank"> 点击查看</a></strong></li>
-							<li><strong>微信搜小程序： 拾夕 Todo </strong></li>
-						</ul>
-					</div>
-				</div>
-				<div class="item">
-					<div class="left pill">02/2019 - 03/2019</div>
-					<div class="more">
-						<h3>默默博客平台</h3>
-						<ul>
-							<li><strong>技术栈:</strong> <strong class="color">vue-cli、vue-router、Vuex、
-								Axios、element-ui、ES6</strong> </li>
-							<li><strong>功能：</strong><strong class="color">登陆注册、博客的增删改查、展示个人博客、首页博客、个人信息查看。</strong></li>
-
-							<li><strong>项目源码:<a href="https://github.com/fatfanfan/momo-blog" target="_blank"> momoBlog</a></strong></li>
-							<li><strong>预览项目:<a href="https://fatfanfan.github.io/momo-blog/dist/#/" target="_blank">点击查看</a></strong></li>
-						</ul>
-
-					</div>
-				</div>
-				<div class="item">
-					<div class="left pill">09/2018 - 10/2018</div>
-					<div class="more">
-						<h3>Vue仿cnode社区</h3>
-						<ul>
-							<li><strong>技术栈:</strong> <strong class="color">vue-cli、vue-router、 Axios、ES6、CSS3 </strong> </li>
-							<li><strong>功能：</strong>实现了在线浏览帖子，查看用户信息功能</li>
-							<li><strong>项目源码:<a href="https://github.com/fatfanfan/cnode" target="_blank">conde 源码</a></strong></li>
-							<li><strong>预览项目:<a href="https://fatfanfan.github.io/cnode/dist" target="_blank">点击查看</a></strong></li>
-						</ul>
-					</div>
-				</div>
-				<div class="item">
-					<div class="left pill">08/2018 - 08/2018</div>
-					<div class="more">
-						<h3>默默在线画板</h3>
-						<ul>
-							<li><strong>技术栈：</strong> <strong class="color">原生 JavaScript 、Canvas、 CSS3</strong></li>
-							<li><strong>功能:</strong> 选择任意颜色、画笔粗细以及橡皮擦等功能。在线画板的本地保存功能。支持PC和手机端在线绘画功能。</li>
-							<li><strong>项目源码:<a href="https://github.com/fatfanfan/canvas" target="_blank">github.com/fatfanfan/canvas</a></strong></li>
-							<li><strong>预览项目:<a href="https://fatfanfan.github.io/canvas/index.html" target="_blank">点击查看</a></strong></li>
-						</ul>
-					</div>
-				</div>
-				<div class="item">
-					<div class="left pill">08/2018 - 08/2018</div>
-					<div class="more">
-						<h3>键盘导航</h3>
-						<ul>
-							<li><strong>技术栈：</strong> <strong class="color">原生 JavaScript CSS3</strong></li>
-							<li><strong>功能: </strong>该项目使用原生JS实现,敲击键盘导向目标网址,导航键可编辑， 按下键盘导向新网址.</li>
-							<li><strong>项目源码:<a href="https://github.com/fatfanfan/keyboard" target="_blank">导航</a></strong></li>
-							<li><strong>预览项目:<a href="https://fatfanfan.github.io/keyboard/index.html" target="_blank">点击查看</a></strong></li>
-						</ul>
-					</div>
-				</div>
-
-
-			</div>
-			<div class="about-me section">
 			</div>
 		</div>
 	</div>
+
+
+	<main>
+		<div class="projects section">
+			<h2>项目经验</h2>
+			<div class="item">
+				<div class="more">
+					<h3>拾夕 Todo 小程序</h3>
+					<ul>
+						<li><strong>技术栈：</strong><strong class="color">原生微信小程序</strong></li>
+						<li><strong>项目介绍 </strong><br>
+							1.项目是根据番茄工作法概念而进行开发的，提供了登录注册功能、历史 Todo 查看功能
+									完成任务记录功能、25min 番茄钟计时功能以及番茄钟暂停开始再来一组功能。 <br>
+							2. 使用微信原生进行开发，开发中遇到组件复用问题，索性进行了组件封装以及 HTTP 请求封装，从而减少了代码量。 <br>
+							3. 依托于微信，使用上较 app 更加方便，UI 简洁，交互体验上更加友好。
+						</li>
+						<li><strong>项目源码:<a href="https://github.com/fatfanfan/tomato-mini" target="_blank"> 点击查看</a></strong></li>
+						<li><strong>微信搜小程序： 拾夕 Todo </strong></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="more">
+					<h3>momoUI</h3>
+					<ul>
+						<li><strong>技术栈:</strong> <strong class="color">Vue-cli CSS3 vuepress
+							ES6</strong> </li>
+						<li><strong>项目介绍 ：一个简易 UI 组件库 </strong> <br>
+							1. 此项目主要是构建一些常用的组件，通过实践来掌握 Vue 的常用功能 <br>
+							2. 参考了 element-ui 、 ant Design 做出来的简易组件库 <br>
+							3. 组件介绍： button input Grid Layout Toast Tabs Popover Collapse 组件 <br>
+							4. UI 基本上根据其他组件库进行仿写。 <br>
+							5. 项目出现的问题：组件之间的通信  => 通过文档中的父子、兄弟通信方案解决。 <br>
+						</li>
+						<li><strong>项目源码:<a href="https://github.com/fatfanfan/fan-ui" target="_blank">点击查看</a></strong></li>
+						<li><strong>预览项目:<a href="https://fatfanfan.github.io/fan-UI/" target="_blank">点击查看</a></strong></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="more">
+					<h3>默默博客平台</h3>
+					<ul>
+						<li><strong>技术栈:</strong> <strong class="color">vue-cli、vue-router、Vuex、
+							Axios、element-ui、ES6</strong> </li>
+						<li><strong>项目介绍</strong> <br>
+							1. 项目是一个在线博客平台，为用户提供写博客的平台<br>
+							2. 主要功能：实现了登录注册功能，用户信息保存在数据库，登录时会验证用户 ,帖子查看功能，用户对博客的增删改查功能 <br>
+							3. 首页主要是展示博客，用户可以查看博客详情以及博主个人信息 <br>
+							4. 用户登录后可以进行博客的创建、更新、删除,实现了一个在线博客平台的基本功能。
+						</li>
+
+						<li><strong>项目源码:<a href="https://github.com/fatfanfan/momo-blog" target="_blank"> momoBlog</a></strong></li>
+						<li><strong>预览项目:<a href="https://fatfanfan.github.io/momo-blog/dist/#/" target="_blank">点击查看</a></strong></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="item">
+				<div class="more">
+					<h3>Vue仿cnode社区</h3>
+					<ul>
+						<li><strong>技术栈:</strong> <strong class="color">vue-cli、vue-router、 Axios、ES6、CSS3 </strong> </li>
+						<li><strong>项目介绍</strong>
+							1. 这个项目是根据Cnode 社区给出的 API 当做后端，使用 Vue 来构建前端页面完成的。
+							2. 主要功能：帖子查看功能，用户信息查看，不同主题的切换
+							3. 这个项目主要是跟后端的一个交互，从后端获取数据，再用 vue 指令来渲染到页面上。
+							4， 封装 HTTP 请求，减少了代码量，与后端交互更清晰。
+						</li>
+						<li><strong>项目源码:<a href="https://github.com/fatfanfan/cnode" target="_blank">conde 源码</a></strong></li>
+						<li><strong>预览项目:<a href="https://fatfanfan.github.io/cnode/dist" target="_blank">点击查看</a></strong></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="more">
+					<h3>默默在线画板</h3>
+					<ul>
+						<li><strong>技术栈：</strong> <strong class="color">原生 JavaScript 、Canvas、 CSS3</strong></li>
+						<li><strong>项目介绍</strong> <br>
+							1. 这个项目主要是用来熟悉 Canvas , 完成后基本上熟悉了Canvas 绘画的基本功能。<br>
+							2. 根据Canvas API 实现了画笔功能（调色、线条宽度）、橡皮擦功能以及在线画板的保存功能。 <br>
+							3. 遇到了调色板实现难题，在网上进行查阅后，引入了 colorpicker.js ，从而实现了调色板的添加，根据colorpicker 的 API,从而实现了选择颜色后画笔颜色改变。<br>
+							4.使用 CSS 3 媒体查询，提供了 PC 和手机端在线绘画功能。 <br>
+						</li>
+						<li><strong>项目源码:<a href="https://github.com/fatfanfan/canvas" target="_blank">github.com/fatfanfan/canvas</a></strong></li>
+						<li><strong>预览项目:<a href="https://fatfanfan.github.io/canvas/index.html" target="_blank">点击查看</a></strong></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="more">
+					<h3>默默导航</h3>
+					<ul>
+						<li><strong>技术栈：</strong> <strong class="color">原生 JavaScript CSS3</strong></li>
+						<li><strong>功能: </strong>
+							1. 项目目标是构建一个导航页面，是自身对原生JavaScript 更加熟悉，了解了键盘事件。 <br>
+							2. 功能：导航功能，通过键盘事件，导向对应键盘上目标网址。修改目标网址，可导向新网址。
+						</li>
+						<li><strong>项目源码:<a href="https://github.com/fatfanfan/keyboard" target="_blank">点击查看</a></strong></li>
+						<li><strong>预览项目:<a href="https://fatfanfan.github.io/keyboard/index.html" target="_blank">点击查看</a></strong></li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="projects section">
+			<h2>个人评价</h2>
+			<p>善于知识总结梳理，乐于分享，经常写技术博客，喜欢承担有技术难度的工作，乐于学习新的技术栈。</p>
+		</div>
+	</main>
+
+
+
+
+</div>
 </body>
